@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mundopython</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<header class="main-head">
+		<nav>
+			<h1 id="logo">Flask Blog</h1>
+			<ul>
+				<li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+				<li><a href="{{ url_for('agregar') }}">Agregar</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	{% block body %}
+	{% endblock %}
+</body>
+</html>

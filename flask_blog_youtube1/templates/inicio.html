@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+{% for post in posts %}
+<section>
+	
+	<h3 class="post-title">{{ post.titulo }}</h3>
+
+	<p class="date">Publicado en: {{ post.fecha.strftime('%m/%d/%Y') }}</p>
+	<p>{{ post.texto }}</p>
+
+	<form class="delete-button" action="{{ url_for('borrar') }}" method="post">
+		<button value="{{post.id}}" name="post_id">Borrar Post</button>
+	</form>
+
+</section>
+
+{% endfor %}
+{% endblock %}

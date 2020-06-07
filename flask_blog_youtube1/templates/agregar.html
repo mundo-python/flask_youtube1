@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h2>ESCRIBE BLOG POSTS</h2>
+
+<form class="login-form" action="{{ url_for('crear_post') }}" method="post">
+	<input type="text" name="titulo" placeholder="titulo">
+
+	<textarea name="texto" cols="30" rows="10"></textarea>
+
+	<input type="submit" name="submit">
+</form>
+
+{% endblock %}

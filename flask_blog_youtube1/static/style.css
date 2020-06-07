@@ -1,0 +1,138 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+/* NAV BAR */
+
+h1{
+	font-size: 2.5rem;
+}
+ul li, p{
+	font-size: 2rem;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.main-head{
+	background: #131c27;
+	color: white;
+}
+nav{
+	min-height: 10vh;
+	display: flex;
+	width: 80%;
+	margin: auto;
+	padding: 2rem;
+	align-items: center;
+}
+
+nav ul{
+	display: flex;
+	flex: 1 1 20rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+#logo{
+	flex: 3 1 50rem;
+}
+
+/* SECTION BLOG */
+section{
+	margin: 5vh auto;
+	width: 50%;
+	height: 22vh;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+.post-title{
+	font-size: 2.5rem;
+	margin: 10px auto 0px;
+	padding: 10px;
+
+}
+.date{
+	font-size: 1.6rem;
+	padding-top: : 0;
+	color: grey;
+}
+p{
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+
+}
+
+.delete-button{
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+/* FORM */
+
+
+/* Start form */
+
+
+h2{
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+form{
+	margin: 5vh auto;
+	width: 320px;
+	color: steelblue;
+
+}
+
+input{
+	padding: 10px;
+	font-size: 1.6rem;
+}
+
+.login-form input{
+	display: block;
+	margin-top: 25px;
+	width: 100%;
+	border: 2px solid #131c27;
+	border-radius: 5px;
+}
+.login-form input[type="submit"]{
+
+	border: none;
+	background-color: #131c27;
+	color: white;
+	font-size: 1.8rem;
+}
+
+li{
+
+	margin-top: 0;
+	margin-left: 15px;
+	color: red;
+}
+
+textarea{
+	display: block;
+	margin-top: 25px;
+	border: 2px solid #131c27;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 1.8rem;
+	font-family: sans-serif;
+
+}
+
